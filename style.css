@@ -1,0 +1,460 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #ECF0F1;
+    text-indent: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}   
+.header-section{
+    padding: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family:'Times New Roman';
+}
+
+.home-page h2{
+  color: goldenrod;
+}
+.home-page>h2>span{
+  color: red;
+}
+.home-page p, 
+.header-section a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+ /* border: 2px solid black; */    
+}
+
+.header-section>a{
+    text-decoration: none;
+    color:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.header-section>a>span{
+  color: red;
+}
+.header-section>:hover{
+    
+    
+    border-bottom:3px solid  red;
+}
+.logo {
+    position: absolute;   /* place it freely */
+    top: 10;               /* stick to top */
+    right: 0;            /* stick to right */
+    width: 100px;          /* control size */
+    height: auto;         /* keep aspect ratio */
+    margin: 10px;         /* add breathing space */
+}
+.logo img {
+    width: 100%;          /* make image fill container */
+    height: auto;         /* keep proportions */
+    object-fit: contain;  /* prevent stretching */
+}
+
+
+.home-page>h2{
+    font-size: 35px;
+    text-align: center;
+}
+.home-page>p{
+    font-size: 25px;
+    text-align: center;
+    color:black;
+}
+.about-page>h1{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+}
+.about-page>p{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+.about-page>h2{
+    font-size: 35px;
+    text-align: center;
+    color:goldenrod;
+}
+.about-page>h2>span{
+  color: red;
+}
+.about-page>li>ul{
+    font-size: 25px;
+    color:black;
+
+}
+.menu-section>h2{
+  font-size: 35px;
+  color:goldenrod;
+  text-align: center;
+}
+.menu-section>h2>span{
+  color: red;
+}
+.menu-section>div>ul{
+  font-size: 18px;
+  color:goldenrod;
+  text-align: center;
+  width: 200px;                  
+  border: 2px solid #ff6347; 
+  border-radius: 20px;       
+  overflow: hidden;          
+  text-align: center; 
+  padding: 5px;       
+  margin: 10px;              
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: transform 0.3s ease;
+}
+.menu-section>div>ul:hover{
+   transform: scale(1.05); 
+}
+.menu-section>div>ul>span{
+  color: red;
+  text-align: center;
+}
+.menu-section>div>img{
+  width: 180px;
+  height:180px;
+  box-shadow: 5px;
+  margin: 50px;
+  float : left;             /* float items side by side */
+  margin-right: 8px;
+  width: 80;               /* image fills box width */
+  height: 150px;             /* fixed height */
+  object-fit: cover; 
+
+}
+.menu-section>div>img:hover{
+ transform: scale(1.05); 
+  cursor: pointer;
+}
+.Snacks>h2{
+  font-size: 35px;
+  color: goldenrod;
+  text-align: center;
+}
+.Snacks>h2>span{
+  color: red;
+}
+.Snacks>div>ul{
+  font-size: 18px;
+  color:goldenrod;
+  text-align: center;
+  width: 200px;                  
+  border: 2px solid #ff6347; 
+  border-radius: 20px;       
+  overflow: hidden;          
+  text-align: center; 
+  padding: 10px;       
+  margin: 10px;              
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: transform 0.3s ease;
+}
+.Snacks>div>ul>span{
+  color: red;
+}
+.Snacks>div>ul:hover{
+   transform: scale(1.05);
+}
+.Snacks>div>img{
+  width: 180px;
+  height:180px;
+  box-shadow: 5px;
+  margin: 80px;
+  float : left;             /* float items side by side */
+  margin-right: 8px;
+  width: 80;               /* image fills box width */
+  height: 150px;             /* fixed height */
+  object-fit: cover; 
+}
+.Snacks>div>img:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+.drinks>h2{
+  font-size: 35px;
+  color: goldenrod;
+  text-align: center;
+}
+.drinks>h2>span{
+  color: red;
+}
+.drinks>div>ul{
+  font-size: 18px;
+  color:goldenrod;
+  text-align: center;
+  width: 200px;                  
+  border: 2px solid #ff6347; 
+  border-radius: 20px;       
+  overflow: hidden;          
+  text-align: center; 
+  padding: 10px;       
+  margin: 10px;              
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: transform 0.3s ease;
+}
+.drinks>div>ul>span{
+  color: red;
+}
+.drinks>div>ul:hover{
+   transform: scale(1.05);
+}
+.drinks>div>img{
+  width: 180px;
+  height:180px;
+  box-shadow: 5px;
+  margin: 80px;
+  float : left;             /* float items side by side */
+  margin-right: 8px;
+  width: 80;               /* image fills box width */
+  height: 150px;             /* fixed height */
+  object-fit: cover; 
+}
+.drinks>div>img:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+.offers>h2{
+  font-size: 35px;
+  color: goldenrod;
+  text-align: center;
+}
+.offers>h2>span{
+  color: red;
+}
+.offers>p{
+  text-align: center;
+  font-size: 25px;
+}
+.offers>h4{
+  color: goldenrod;
+  font-size: 25px;
+  text-align: center;
+}
+.offers>h4>span{
+  color: red;
+}
+.menus>a{
+  text-decoration: none;
+}
+.menus > a > button {
+  padding: 12px;
+  width: 150px;
+  display: block;       /* makes the button take full line */
+  margin: 0 auto;       /* centers horizontally */
+}
+.menus>a>button:hover{
+ 
+  color: black;
+}
+
+.reviews-section >h2{
+  font-size: 35px;
+  color:goldenrod;
+  text-align: center;
+  
+}
+.reviews-section >h2>span{
+  color: red;
+}
+
+.reviews-section>p{
+  font-size: 25px;
+  color:black;
+  text-align: center;
+  
+}
+.home-page>img{
+   display: flex;
+  justify-content: center 10px;      /* centers the row horizontally */
+  gap: 20px;                   /* space between posters */
+  flex-wrap: wrap;             /* allows wrapping on small screens */
+  padding: 20px;
+  width: 45%;                  /* medium size */
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+.poster {
+  display: flex;
+  justify-content: center 10px;      /* centers the row horizontally */
+  gap: 20px;                   /* space between posters */
+  flex-wrap: wrap;             /* allows wrapping on small screens */
+  padding: 20px;
+  width: 45%;                  /* medium size */
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+
+
+}
+
+
+
+/* Contact Section */
+.contact-section {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* Form Box */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    font-style: italic;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: goldenrod;
+  }
+  .contact-form>h2>span{
+    color: red;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: goldenrod;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: none;
+  }
+
+  .input-group label {
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label,
+  .input-group textarea:focus + label,
+  .input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 30px;
+    font-size: 12px;
+    color: goldenrod;
+    background: white;
+    padding: 0 5px;
+  }
+   .input-group input:focus + label>span,
+  .input-group input:not(:placeholder-shown) + label>span,
+  .input-group textarea:focus + label,
+  .input-group textarea:not(:placeholder-shown) + label>span{
+    color: red;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color:red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: italic;
+  }
+  
+
+  button:hover {
+    
+    transform: scale(1.1);
+  }
+
+
+/* Map Box */
+.map-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-box h2 {
+  margin-bottom: 10px;
+  color: #daa520;
+}
+.map-box>h2>span{
+  color: red;
+}
+
+.map-box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-btn img {
+  width: 48px;
+  height: 48px;
+}
+.service-section>h2{
+  font-size: 50px;
+  color: whitesmoke;
+}
+.section>h2{
+  font-size: 50px;
+  color: whitesmoke;
+}

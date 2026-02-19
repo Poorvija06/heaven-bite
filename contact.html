@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Heaven Bite pizza -Contactus</title>
+    <style>
+    body {
+      background-image: url(images/background\ design.jpg);       
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <section class="header-section">
+        <a href="index.html">
+        <span>H</span>o<span>m</span>e</a>
+        <a href="About.html">A<span>b</span>o<span>u</span>t</a>
+        <a href="menus.html">M<span>e</span>n<span>u</span>s</a>
+        <a href="Offers&reviews.html"></span>O<span>f</span>f<span>e</span>r<span>s</span><span> & </span> R<span>e</span>v<span>i</span>e<span>w</span>s</a>
+        <a href="contact.html">C<span>o</span>n<span>t</span>a<span>c</span>t <span>U</span>s</a>
+    </section>
+    <section class="logo">
+      <img src="images/h logo.jpg">
+
+    </section>
+      
+   <section class="contact-section">
+  <div class="contact-wrapper">
+    <!-- Contact Form -->
+  <div class="contact-form">
+  <h2><span>Send</span> Us <span>a</span> Message</h2>
+  <form id="whatsappForm">
+    <div class="input-group">
+      <i class="fas fa-user"></i>
+      <input type="text" id="name" required>
+      <label for="name"><span>Your</span> Name</label>
+    </div>
+
+    <div class="input-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="email" required>
+      <label for="email"><span>Your</span> Email</label>
+    </div>
+
+    <div class="input-group">
+      <i class="fas fa-comment-dots"></i>
+      <textarea id="message" required></textarea>
+      <label for="message"><span>Your</span> Message</label>
+    </div>
+
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</div>
+
+<!-- Javascript Code -->
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+   const whatsappMessage = `Hello Heaven Bite Pizza!',%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const phoneNumber = "9360827631"; // Replace with your actual WhatsApp number
+
+    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+  });
+   </script>
+
+    <!-- Location Info -->
+    <div class="map-box">
+      <h2><span>Visit</span> Us</h2>
+      <p>456 Example Street, Chennai, Tamil Nadu, India</p>
+      <iframe 
+        src="https://www.google.com/maps?q=Chennai&output=embed" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+  </section>
+<script src="style.js"></script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+</a>
+</body>
+</html>
