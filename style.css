@@ -270,32 +270,36 @@ body{
   text-align: center;
   
 }
-.home-page>img{
-   display: flex;
-  justify-content: center 10px;      /* centers the row horizontally */
-  gap: 20px;                   /* space between posters */
-  flex-wrap: wrap;             /* allows wrapping on small screens */
+#image {
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  width: 45%;                  /* medium size */
-  max-width: 400px;
+}
+
+#image img {
+  width: 280px;        /* medium size */
+  max-width: 90%;      /* responsive */
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .poster {
   display: flex;
-  justify-content: center 10px;      /* centers the row horizontally */
-  gap: 20px;                   /* space between posters */
-  flex-wrap: wrap;             /* allows wrapping on small screens */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   padding: 20px;
-  width: 45%;                  /* medium size */
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
 
-
+  width: 100%;
 }
 
-
+.poster img {
+  width: 280px;        /* medium size */
+  max-width: 90%;      /* small screen-ல shrink ஆகும் */
+  height: auto;
+  object-fit: cover;   /* neat crop look */
+  border-radius: 10px; /* optional */
+}
 
 /* Contact Section */
 .contact-section {
